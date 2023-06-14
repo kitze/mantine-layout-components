@@ -36,6 +36,9 @@
     "testEnvironment": "jsdom"
   },
   "peerDependencies": {
+    "@emotion/react": "^11.11.1",
+    "@mantine/core": "^6.0.13",
+    "@mantine/hooks": "^6.0.13",
     "react": ">=16"
   },
   "engines": {
@@ -50,5 +53,33 @@
       "path": "dist/mantine-layout-components.esm.js",
       "limit": "10 KB"
     }
-  ]
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@emotion/react": "^11.11.1",
+    "@mantine/core": "^6.0.13",
+    "@mantine/hooks": "^6.0.13",
+    "@size-limit/preset-small-lib": "^8.2.4",
+    "@storybook/addon-essentials": "^7.1.0-alpha.33",
+    "@storybook/addon-info": "^6.0.0-alpha.2",
+    "@storybook/addon-links": "^7.1.0-alpha.33",
+    "@storybook/addons": "^7.1.0-alpha.33",
+    "@storybook/react": "^7.1.0-alpha.33",
+    "@storybook/react-vite": "^7.1.0-alpha.33",
+    "@tsconfig/recommended": "^1.0.2",
+    "@tsconfig/vite-react": "^2.0.0",
+    "@types/react": "^18.2.12",
+    "@types/react-dom": "^18.2.5",
+    "babel-loader": "^9.1.2",
+    "dts-cli": "^2.0.3",
+    "husky": "^8.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "size-limit": "^8.2.4",
+    "storybook": "^7.1.0-alpha.33",
+    "tslib": "^2.5.3",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9"
+  }
 }

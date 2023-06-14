@@ -75,7 +75,7 @@ This is the folder structure we set up for you:
 /test
   index.test.tsx  # EDIT THIS
 /stories
-  Thing.stories.tsx # EDIT THIS
+  Vertical.stories.tsx # EDIT THIS
 /.storybook
   main.js
   preview.js
