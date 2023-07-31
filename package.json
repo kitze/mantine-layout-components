@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "author": "Kitze",
+  "repository": "kitze/mantine-layout-components",
   "main": "dist/index.js",
   "module": "dist/mantine-layout-components.esm.js",
   "typings": "dist/index.d.ts",

@@ -6,6 +6,14 @@ Congrats! You just saved yourself hours of work by bootstrapping this project wi
 
 > If you’re new to TypeScript and React, checkout [this handy cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet/)
 
+## Usage
+
+To install `mantine-layout-componenst` via `npm`:
+
+```bash
+npm install mantine-layout-components
+```
+
 ## Commands
 
 DTS scaffolds your new library inside `/src`, and also sets up a [Vite-based](https://vitejs.dev) playground for it inside `/example`.
