@@ -7,8 +7,22 @@ export type HorizontalProps = GroupProps & CommonProps;
 
 export const Horizontal: ReactFC<HorizontalProps> = forwardRef(
   (props, ref: any) => {
-    const { children, center, fullW, centerV, centerH, debug, sx, ...rest } =
-      props;
+    const { 
+      alignEnd,
+      center,
+      centerH,
+      centerV,
+      children,
+      debug,
+      fullH,
+      fullW,
+      noWrap,
+      scrollable,
+      spaceBetween,
+      sx,
+      sxArray,
+      ...rest 
+    } = props;
 
     return (
       <Group

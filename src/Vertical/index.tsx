@@ -14,14 +14,19 @@ export type VerticalProps = StackProps & CommonProps;
 export const Vertical: ReactFC<VerticalProps> = forwardRef<any, VerticalProps>(
   (props, ref) => {
     const {
-      children,
-      sxArray = [],
+      alignEnd,
       center,
-      fullW,
-      centerV,
       centerH,
+      centerV,
+      children,
       debug,
+      fullH,
+      fullW,
+      noWrap,
+      scrollable,
+      spaceBetween,
       sx,
+      sxArray = [],
       ...rest
     } = props;
 
