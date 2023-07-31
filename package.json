@@ -8,24 +8,23 @@
   "module": "dist/mantine-layout-components.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
+    "README.md",
+    "LICENSE",
     "dist",
     "src"
   ],
   "scripts": {
     "analyze": "size-limit --why",
+    "prettier": "prettier --write .",
     "build": "dts build",
     "build-storybook": "storybook build",
-    "lint": "dts lint",
-    "prepare": "dts build",
+    "lint": "dts lint .",
+    "prepare": "dts build && husky install",
     "size": "size-limit",
     "start": "dts watch",
     "storybook": "storybook dev -p 6006",
-    "test": "dts test --passWithNoTests"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "dts lint"
-    }
+    "test": "dts test --passWithNoTests",
+    "typecheck": "tsc --noEmit"
   },
   "prettier": {
     "printWidth": 80,
@@ -34,7 +33,10 @@
     "trailingComma": "es5"
   },
   "jest": {
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "globals": {
+      "IS_REACT_ACT_ENVIRONMENT": true
+    }
   },
   "peerDependencies": {
     "@emotion/react": "^11.11.1",
@@ -80,7 +82,7 @@
     "size-limit": "^8.2.4",
     "storybook": "^7.1.0-alpha.33",
     "tslib": "^2.5.3",
-    "typescript": "^5.1.3",
+    "typescript": "~5.0.0",
     "vite": "^4.3.9"
   }
 }

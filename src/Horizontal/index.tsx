@@ -7,7 +7,7 @@ export type HorizontalProps = GroupProps & CommonProps;
 
 export const Horizontal: ReactFC<HorizontalProps> = forwardRef(
   (props, ref: any) => {
-    const { 
+    const {
       alignEnd,
       center,
       centerH,
@@ -21,7 +21,7 @@ export const Horizontal: ReactFC<HorizontalProps> = forwardRef(
       spaceBetween,
       sx,
       sxArray,
-      ...rest 
+      ...rest
     } = props;
 
     return (

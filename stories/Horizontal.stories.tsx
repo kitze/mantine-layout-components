@@ -1,5 +1,6 @@
+import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { Horizontal, HorizontalProps } from '../src';
+import { Horizontal } from '../src';
 
 const meta: Meta<typeof Horizontal> = {
   title: 'Horizontal',
