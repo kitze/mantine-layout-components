@@ -37,11 +37,13 @@ import { Horizontal } from 'mantine-layout-components';
 
 const MyComponent = () => {
   return (
-    <Horizontal>
-      <div>Element 1</div>
-      <div>Element 2</div>
-      {/* Add more elements here */}
-    </Horizontal>
+	  <MantineProvider theme={theme}>
+		  <Horizontal>
+			  <div>Element 1</div>
+			  <div>Element 2</div>
+			  {/* Add more elements here */}
+		  </Vertical>
+	  </MantineProvider>
   );
 };
 ```
@@ -56,11 +58,13 @@ import { Vertical } from 'mantine-layout-components';
 
 const MyComponent = () => {
   return (
-    <Vertical>
-      <div>Element 1</div>
-      <div>Element 2</div>
-      {/* Add more elements here */}
-    </Vertical>
+	  <MantineProvider theme={theme}>
+		  <Vertical >
+			  <div>Element 1</div>
+			  <div>Element 2</div>
+			  {/* Add more elements here */}
+		  </Vertical>
+	  </MantineProvider>
   );
 };
 ```
@@ -73,11 +77,13 @@ For debugging purposes, you can add `debug` prop to any component to see its bou
 import React from 'react';
 
 const MyComponent = () => {
-    <Vertical debug>
-      <div>Element 1</div>
-      <div>Element 2</div>
-      {/* Add more elements here */}
-    </Vertical>
+	<MantineProvider theme={theme}>
+		<Vertical debug>
+			<div>Element 1</div>
+			<div>Element 2</div>
+			{/* Add more elements here */}
+		</Vertical>
+	</MantineProvider>
   );
 };
 ```
@@ -88,22 +94,49 @@ You can make any component full width or full height by adding `fullW` or `fullH
 
 ```tsx
 import React from 'react';
+import {MantineProvider} from "@mantine/core";
 
 const MyComponentFullW = () => {
-    <Vertical fullW>
-      <div>Element 1</div>
-      <div>Element 2</div>
-      {/* Add more elements here */}
-    </Vertical>
-  );
+    <MantineProvider theme={theme}>
+        <Vertical fullW center gap="xl">
+	        <div>Element 1</div>
+	        <div>Element 2</div>
+	        {/* Add more elements here */}
+        </Vertical>
+    </MantineProvider>
 };
 
 const MyComponentFullH = () => {
-    <Vertical fullH>
-      <div>Element 1</div>
-      <div>Element 2</div>
-      {/* Add more elements here */}
-    </Vertical>
-  );
+	<MantineProvider theme={theme}>
+		<Vertical fullH >
+			<div>Element 1</div>
+			<div>Element 2</div>
+			{/* Add more elements here */}
+		</Vertical>
+	</MantineProvider>
+)
+	;
 };
+```
+
+### Mantine Version 7.x.x migration notes
+
+Starting from version 1.0.0, this package requires `@mantine/core` version 7.x.x.
+
+1. import styles from `@mantine/core`:
+
+```ts
+import '@mantine/core/styles.layer.css';
+```
+
+2. use MantineProvider:
+
+```tsx
+import { MantineProvider } from '@mantine/core';
+```
+
+3. now instead of `spacing` use `gap` prop:
+
+```tsx 
+<Vertical gap="xl">
 ```
