@@ -4,6 +4,9 @@ Mantine Layout Components is a collection of React components for creating horiz
 
 Built on top of Mantine's [Group](https://mantine.dev/core/group/) and [Stack](https://mantine.dev/core/stack/).
 
+> Please note, starting from version 1.0.0, this package requires `@mantine/core` version 7.x.x.
+> If you are using `@mantine/core` version < 7.0.0, please install `mantine-layout-components` version 0.1.2
+
 ## Installation
 
 You can install `mantine-layout-components` via `npm` or `yarn`:

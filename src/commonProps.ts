@@ -1,4 +1,4 @@
-import { Sx } from '@mantine/core';
+import { Styles } from '@mantine/core';
 
 const enableDebug: boolean = true;
 
@@ -12,7 +12,7 @@ export type CommonProps = {
   spaceBetween?: boolean;
   noWrap?: boolean;
   alignEnd?: boolean;
-  sxArray?: Sx[];
+  styles?: Styles<any>;
   scrollable?: boolean;
   ref?: any;
 };

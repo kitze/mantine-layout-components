@@ -25,8 +25,7 @@ export const Vertical: ReactFC<VerticalProps> = forwardRef<any, VerticalProps>(
       noWrap,
       scrollable,
       spaceBetween,
-      sx,
-      sxArray = [],
+      styles,
       ...rest
     } = props;
 
@@ -37,12 +36,15 @@ export const Vertical: ReactFC<VerticalProps> = forwardRef<any, VerticalProps>(
         ...centerVerticalProps,
       }),
     };
-    //todo: TS fix
-    let sx1 = [st, sx, ...sxArray] as any;
     return (
       <Stack
         ref={ref}
-        sx={sx1}
+        styles={{
+          root: {
+            ...st,
+            ...styles,
+          },
+        }}
         {...(centerV && {
           align: 'center',
         })}

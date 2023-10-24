@@ -1,6 +1,6 @@
 {
   "name": "mantine-layout-components",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Kitze",
   "repository": "kitze/mantine-layout-components",
@@ -39,9 +39,8 @@
     }
   },
   "peerDependencies": {
-    "@emotion/react": "^11.11.1",
-    "@mantine/core": "^6.0.13",
-    "@mantine/hooks": "^6.0.13",
+    "@mantine/core": "7.1.5",
+    "@mantine/hooks": "7.1.5",
     "react": ">=16"
   },
   "engines": {
@@ -59,9 +58,8 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.22.5",
-    "@emotion/react": "^11.11.1",
-    "@mantine/core": "^6.0.13",
-    "@mantine/hooks": "^6.0.13",
+    "@mantine/core": "7.1.5",
+    "@mantine/hooks": "7.1.5",
     "@size-limit/preset-small-lib": "^8.2.4",
     "@storybook/addon-essentials": "^7.1.0-alpha.33",
     "@storybook/addon-info": "^6.0.0-alpha.2",

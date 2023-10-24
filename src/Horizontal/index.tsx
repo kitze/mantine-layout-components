@@ -19,8 +19,7 @@ export const Horizontal: ReactFC<HorizontalProps> = forwardRef(
       noWrap,
       scrollable,
       spaceBetween,
-      sx,
-      sxArray,
+      styles,
       ...rest
     } = props;
 
@@ -35,18 +34,17 @@ export const Horizontal: ReactFC<HorizontalProps> = forwardRef(
             justify: 'center',
           }),
         }}
-        sx={[
-          {
+        styles={{
+          root: {
             ...commonProps(props),
             ...(center && {
               justifyContent: 'center',
               alignItems: 'center',
               alignContent: 'center',
             }),
+            ...styles,
           },
-          //@ts-ignore
-          sx,
-        ]}
+        }}
         {...rest}
       >
         {children}
