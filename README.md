@@ -58,13 +58,13 @@ import { Vertical } from 'mantine-layout-components';
 
 const MyComponent = () => {
   return (
-	  <MantineProvider theme={theme}>
-		  <Vertical >
-			  <div>Element 1</div>
-			  <div>Element 2</div>
-			  {/* Add more elements here */}
-		  </Vertical>
-	  </MantineProvider>
+    <MantineProvider theme={theme}>
+      <Vertical>
+        <div>Element 1</div>
+        <div>Element 2</div>
+        {/* Add more elements here */}
+      </Vertical>
+    </MantineProvider>
   );
 };
 ```
@@ -123,20 +123,24 @@ const MyComponentFullH = () => {
 
 Starting from version 1.0.0, this package requires `@mantine/core` version 7.x.x.
 
-1. import styles from `@mantine/core`:
+This is a brief overview of the migration steps. For a comprehensive migration guide, please refer to the official [Mantine 6.x.x to 7.x.x Migration Guide](https://mantine.dev/guides/6x-to-7x/).
+
+#### Imortant Changes
+
+1. **Add Style Imports**: Import styles from `@mantine/core` as follows:
 
 ```ts
 import '@mantine/core/styles.layer.css';
 ```
 
-2. use MantineProvider:
+2. **Use MantineProvider**: Implement MantineProvider from @mantine/core:
 
 ```tsx
 import { MantineProvider } from '@mantine/core';
 ```
 
-3. now instead of `spacing` use `gap` prop:
+3. **Change Spacing Property**: Replace the spacing prop with the gap prop:
 
-```tsx 
+```tsx
 <Vertical gap="xl">
 ```

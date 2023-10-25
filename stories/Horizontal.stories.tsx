@@ -21,7 +21,7 @@ const theme = createTheme({});
 export const Default: Story = {
   render: () => (
     <MantineProvider theme={theme}>
-      <Horizontal fullW>
+      <Horizontal fullW gap="xl">
         <div>hello</div>
         <div>world</div>
         <div>bye</div>
