@@ -44,7 +44,6 @@ const MyComponent = () => (
     </Horizontal>
   </MantineProvider>
 );
-
 ```
 
 ### Vertical Layout Component
@@ -76,7 +75,7 @@ For debugging purposes, you can add `debug` prop to any component to see its bou
 import React from 'react';
 
 const MyComponent = () => {
-  return ( 
+  return (
     <MantineProvider theme={theme}>
       <Vertical debug>
         <div>Element 1</div>
@@ -94,7 +93,7 @@ You can make any component full width or full height by adding `fullW` or `fullH
 
 ```tsx
 import React from 'react';
-import {MantineProvider} from "@mantine/core";
+import { MantineProvider } from '@mantine/core';
 
 const MyComponentFullW = () => (
   <MantineProvider theme={theme}>
@@ -108,14 +107,13 @@ const MyComponentFullW = () => (
 
 const MyComponentFullH = () => (
   <MantineProvider theme={theme}>
-    <Vertical fullH >
+    <Vertical fullH>
       <div>Element 1</div>
       <div>Element 2</div>
       {/* Add more elements here */}
     </Vertical>
   </MantineProvider>
-)
-
+);
 ```
 
 ### Mantine Version 7.x.x migration notes
