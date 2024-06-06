@@ -15,6 +15,7 @@ export type CommonProps = {
   sxArray?: Sx[];
   scrollable?: boolean;
   ref?: any;
+  spacing?: number | string;
 };
 
 export const commonProps = ({
@@ -24,9 +25,11 @@ export const commonProps = ({
   fullH,
   spaceBetween,
   fullW,
+  spacing,
 }: CommonProps) => {
   const shouldDebug = debug && enableDebug;
   return {
+    gap: spacing,
     ...(shouldDebug
       ? {
           border: '1px solid red',

@@ -26,6 +26,7 @@ export const Vertical: ReactFC<VerticalProps> = forwardRef<any, VerticalProps>(
       scrollable,
       spaceBetween,
       sx,
+      spacing,
       sxArray = [],
       ...rest
     } = props;

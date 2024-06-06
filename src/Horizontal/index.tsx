@@ -21,6 +21,7 @@ export const Horizontal: ReactFC<HorizontalProps> = forwardRef(
       spaceBetween,
       sx,
       sxArray,
+      spacing,
       ...rest
     } = props;
 
