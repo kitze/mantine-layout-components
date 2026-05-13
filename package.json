@@ -66,7 +66,7 @@
     "@storybook/addon-essentials": "^7.1.0-alpha.33",
     "@storybook/addon-info": "^6.0.0-alpha.2",
     "@storybook/addon-links": "^7.1.0-alpha.33",
-    "@storybook/addons": "^7.1.0-alpha.33",
+    "@storybook/addons": "^7.6.17",
     "@storybook/react": "^7.1.0-alpha.33",
     "@storybook/react-vite": "^7.1.0-alpha.33",
     "@tsconfig/recommended": "^1.0.2",
