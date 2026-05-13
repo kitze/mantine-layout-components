@@ -78,7 +78,7 @@
     "husky": "^8.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-is": "^18.2.0",
+    "react-is": "^19.2.5",
     "size-limit": "^8.2.4",
     "storybook": "^7.1.0-alpha.33",
     "tslib": "^2.5.3",
